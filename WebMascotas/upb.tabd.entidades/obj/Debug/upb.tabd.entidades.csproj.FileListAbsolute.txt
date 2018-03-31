@@ -1,0 +1,5 @@
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\bin\Debug\upb.tabd.entidades.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\bin\Debug\upb.tabd.entidades.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.pdb

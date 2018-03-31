@@ -1,0 +1,16 @@
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\WebMascotas.dll.config
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\WebMascotas.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\WebMascotas.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\EntityFramework.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\EntityFramework.SqlServer.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\EntityFramework.xml
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\EntityFramework.SqlServer.xml
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\obj\Debug\WebMascotas.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\obj\Debug\WebMascotas.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\obj\Debug\WebMascotas.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.controladora.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.entidades.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.broker.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.controladora.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.entidades.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\WebMascotas\bin\upb.tabd.broker.pdb

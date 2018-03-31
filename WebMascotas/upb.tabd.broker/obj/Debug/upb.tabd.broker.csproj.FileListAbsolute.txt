@@ -1,0 +1,10 @@
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\upb.tabd.broker.dll.config
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\upb.tabd.broker.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\upb.tabd.broker.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\EntityFramework.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\EntityFramework.xml
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\obj\Debug\upb.tabd.broker.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\obj\Debug\upb.tabd.broker.dll
+c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.broker\obj\Debug\upb.tabd.broker.pdb
