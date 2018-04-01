@@ -27,7 +27,7 @@ namespace WebMascotas
             string nombre = txtNombre.Text;
 
             EN.Cliente cliente = new EN.Cliente();
-            cliente.IdenCliente = identificacion;
+            cliente.IdentCliente = identificacion;
             cliente.NombreCliente = nombre;
 
             CT.Cliente ctCliente = new CT.Cliente();

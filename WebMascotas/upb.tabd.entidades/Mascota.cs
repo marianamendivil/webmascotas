@@ -6,9 +6,11 @@ using System.Text;
 namespace upb.tabd.entidades
 {
     [Serializable]
-    public class Cliente
+    public class Mascota
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
         public double IdentCliente { get; set; }
-        public string NombreCliente { get; set; }
+        public int IdRaza { get; set; }
     }
 }

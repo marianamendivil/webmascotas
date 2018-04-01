@@ -8,25 +8,27 @@ using BR = upb.tabd.broker;
 namespace upb.tabd.controladora
 {
     /// <summary>
-    /// Permite Crear un cliente
+    /// Permite agregar una mascota
     /// </summary>
-    public class Cliente
+    public class Mascota
     {
         private BR.BDMascotasEntities db = new BR.BDMascotasEntities();
         /// <summary>
-        /// Método para la creación de clientes
+        /// Método para la creación de mascotas
         /// </summary>
-        /// <param name="objCliente"></param>Objeto cliente a insertar
+        /// <param name="objMascota"></param>Objeto mascota a insertar
         /// <returns>Verdadero si se creó correctamente ó falso en caso contrario.</returns>
         
-        public bool CrearCliente(EN.Cliente objCliente){
+        public bool AgregarMascota(EN.Mascota objMascota){
             bool resultado = false;
             try
             {
-                BR.Cliente brCliente = new BR.Cliente();
-                brCliente.IdentCliente = objCliente.IdentCliente;
-                brCliente.NombreCliente = objCliente.NombreCliente;
-                db.Clientes.Add(brCliente);
+                BR.Mascota brMascota = new BR.Mascota();
+                brMascota.Id = objMascota.Id;
+                brMascota.Nombre = objMascota.Nombre;
+                brMascota.IdentCliente = objMascota.IdentCliente;
+                brMascota.IdRaza = objMascota.IdRaza;
+                db.Mascotas.Add(brMascota);
                 db.SaveChanges();
 
                 resultado = true;

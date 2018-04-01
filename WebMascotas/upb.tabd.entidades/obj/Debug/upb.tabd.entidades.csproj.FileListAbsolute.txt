@@ -3,3 +3,8 @@ c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entida
 c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.csprojResolveAssemblyReference.cache
 c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.dll
 c:\users\user1\documents\visual studio 2015\Projects\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.pdb
+C:\Users\user1\Documents\Visual Studio 2015\Projects\repositoriomascotas\WebMascotas\upb.tabd.entidades\bin\Debug\upb.tabd.entidades.dll
+C:\Users\user1\Documents\Visual Studio 2015\Projects\repositoriomascotas\WebMascotas\upb.tabd.entidades\bin\Debug\upb.tabd.entidades.pdb
+C:\Users\user1\Documents\Visual Studio 2015\Projects\repositoriomascotas\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.csprojResolveAssemblyReference.cache
+C:\Users\user1\Documents\Visual Studio 2015\Projects\repositoriomascotas\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.dll
+C:\Users\user1\Documents\Visual Studio 2015\Projects\repositoriomascotas\WebMascotas\upb.tabd.entidades\obj\Debug\upb.tabd.entidades.pdb
