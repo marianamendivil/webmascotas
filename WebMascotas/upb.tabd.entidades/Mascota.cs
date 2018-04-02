@@ -9,8 +9,8 @@ namespace upb.tabd.entidades
     public class Mascota
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public double IdentCliente { get; set; }
-        public int IdRaza { get; set; }
+        public string NombreMascota { get; set; }
+        public Cliente Cliente { get; set; }
+        public Raza Raza { get; set; }
     }
 }

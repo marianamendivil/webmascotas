@@ -30,7 +30,8 @@
         </div>
         <div>
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
-        </div>
+            
+        </div>             
     </form>
 </body>
 </html>

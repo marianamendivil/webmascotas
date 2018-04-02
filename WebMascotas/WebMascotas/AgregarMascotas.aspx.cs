@@ -18,8 +18,7 @@ namespace WebMascotas
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(txtId.Text.Length != 0)
-            {
+            
                 if (txtNombre.Text.Length != 0)
                 {
                     if (txtIdCliente.Text.Length != 0)
@@ -29,8 +28,7 @@ namespace WebMascotas
                             AgregarMascota();
                         }
                     }
-                }
-            }    
+                }  
         }
 
         private void AgregarMascota()
@@ -40,11 +38,17 @@ namespace WebMascotas
             double identificacion = Double.Parse(txtIdCliente.Text);            
             int idRaza = int.Parse(txtIdRaza.Text);
 
+            EN.Cliente client = new EN.Cliente();
+            client.IdentCliente = identificacion;
+
+            EN.Raza raza = new EN.Raza();
+            raza.IdRaza = idRaza;
+
             EN.Mascota mascota = new EN.Mascota();
             mascota.Id = id;
-            mascota.Nombre = nombre;
-            mascota.IdentCliente = identificacion;
-            mascota.IdRaza = idRaza;
+            mascota.NombreMascota = nombre;
+            mascota.Cliente = client;
+            mascota.Raza = raza;
 
             CT.Mascota ctMascota = new CT.Mascota();
             ctMascota.AgregarMascota(mascota);
@@ -54,5 +58,28 @@ namespace WebMascotas
             txtIdCliente.Text = string.Empty;
             txtIdRaza.Text = string.Empty;
         }
+
+        /*
+        protected void btnConsultar_Click(object sender, EventArgs e)
+        {
+            int id = -1;
+
+            if (txtId.Text.Length != 0)
+            {
+                id = int.Parse(txtId.Text); //suponemos que el id siempre es numerico y parseamos ese campo a entero
+            }
+
+            ConsultarMascota(id);
+        }
+
+        
+        private void ConsultarMascota(int id)
+        {
+            CT.Mascota mascota = new CT.Mascota();
+            List<EN.Mascota> lstResultado = mascota.ConsultarMascota(id);
+
+            gvRazas.DataSource = lstResultado;
+            gvRazas.DataBind();
+        } */
     }
 }
