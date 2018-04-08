@@ -17,8 +17,7 @@ namespace WebMascotas
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            
+        {            
                 if (txtNombre.Text.Length != 0)
                 {
                     if (txtIdCliente.Text.Length != 0)
@@ -59,15 +58,18 @@ namespace WebMascotas
 
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-            
-                ActualizarMascota();
-            
-                
+            if (txtNombre.Text.Length != 0)
+            {
+                if (txtIdCliente.Text.Length != 0)
+                {
+                    ActualizarMascota();
+                }                   
+            }                                      
         }
 
         private void ActualizarMascota()
         {
-            int id = int.Parse(txtId.Text);
+            int id = int.Parse(txtId.Text);                       
             string nombre = txtNombre.Text; //validar que tenga dato
             double identificacion = Double.Parse(txtIdCliente.Text); 
             //int idRaza = int.Parse(txtIdRaza.Text);
@@ -79,15 +81,9 @@ namespace WebMascotas
             //Raza.IdRaza = idRaza;
 
             EN.Mascota mascota = new EN.Mascota();
-            mascota.Id = id;
-            //if (txtNombre.Text.Length != 0)
-           // {
-                mascota.NombreMascota = nombre;
-           // }
-            if (txtIdCliente.Text.Length != 0)
-            {
-                mascota.Cliente = client;
-            }
+            mascota.Id = id;                     
+            mascota.NombreMascota = nombre;                              
+            mascota.Cliente = client;            
             //mascota.Raza = raza;
 
             CT.Mascota ctMascota = new CT.Mascota();
