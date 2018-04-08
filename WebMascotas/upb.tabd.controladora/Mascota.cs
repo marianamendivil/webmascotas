@@ -12,7 +12,7 @@ namespace upb.tabd.controladora
     /// </summary>
     public class Mascota
     {
-        private BR.BDMascotasEntities db = new BR.BDMascotasEntities();
+        BR.BDMascotasEntities db = new BR.BDMascotasEntities();
 
         /// <summary>
         /// Método para la consulta de mascotas
@@ -20,15 +20,16 @@ namespace upb.tabd.controladora
         /// <param name="objMascota"></param>Objeto mascota a consultar
         /// <returns>Lista de las mascotas</returns>
  
-        public List<EN.Mascota> ConsultarMascotas(string nombreMascota)
+        public List<EN.Mascota> ConsultarMascotas(int id, string nombreMascota)
         {
             List<EN.Mascota> listado = new List<EN.Mascota>();
 
             var resultado = from m in db.Mascotas
+
                        join c in db.Clientes on m.IdentCliente equals c.IdentCliente
                        join r in db.Razas on m.IdRaza equals r.IdRaza
                        join e in db.Especies on r.IdEspecie equals e.IdEspecie
-                       where (m.Nombre == nombreMascota || nombreMascota == "")
+                       where ((m.Id == id || id == -1) || (m.Nombre == nombreMascota || nombreMascota == ""))
                        select new { m.Id, m.Nombre, c.IdentCliente, c.NombreCliente, r.IdRaza, r.Raza1, e.IdEspecie, e.Especie1 };
 
             foreach (var item in resultado)

@@ -140,13 +140,18 @@ namespace WebMascotas
         
         protected void btnConsultar_Click(object sender, EventArgs e)
         {
+            int idMascota = -1;
             string nMascota = "";
-            if (txtNombre.Text.Length != 0)
+            if (txtId.Text.Length != 0)
             {
-                nMascota = txtNombre.Text;
+                if(txtNombre.Text.Length != 0)
+                {
+                    idMascota = int.Parse(txtId.Text);
+                    nMascota = txtNombre.Text;
+                }
             }
 
-            ConsultarMascota1(nMascota);
+            ConsultarMascota1(idMascota, nMascota);
         }
 
         /*
@@ -160,10 +165,10 @@ namespace WebMascotas
             gvMascotas.DataBind();
         } */
 
-        private void ConsultarMascota1(string nombreMascota)
+        private void ConsultarMascota1(int id, string nombreMascota)
         {
             CT.Mascota mascota = new CT.Mascota();
-            List<EN.Mascota> listado = mascota.ConsultarMascotas(nombreMascota);
+            List<EN.Mascota> listado = mascota.ConsultarMascotas(id, nombreMascota);
 
             gvMascotas.DataSource = listado;
             gvMascotas.DataBind();
