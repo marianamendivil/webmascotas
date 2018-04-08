@@ -57,6 +57,48 @@ namespace WebMascotas
             txtIdRaza.Text = string.Empty;
         }
 
+        protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+            
+                ActualizarMascota();
+            
+                
+        }
+
+        private void ActualizarMascota()
+        {
+            int id = int.Parse(txtId.Text);
+            string nombre = txtNombre.Text; //validar que tenga dato
+            double identificacion = Double.Parse(txtIdCliente.Text); 
+            //int idRaza = int.Parse(txtIdRaza.Text);
+
+            EN.Cliente client = new EN.Cliente();
+            client.IdentCliente = identificacion;
+
+            //EN.Raza raza = new EN.Raza();
+            //Raza.IdRaza = idRaza;
+
+            EN.Mascota mascota = new EN.Mascota();
+            mascota.Id = id;
+            //if (txtNombre.Text.Length != 0)
+           // {
+                mascota.NombreMascota = nombre;
+           // }
+            if (txtIdCliente.Text.Length != 0)
+            {
+                mascota.Cliente = client;
+            }
+            //mascota.Raza = raza;
+
+            CT.Mascota ctMascota = new CT.Mascota();
+            ctMascota.ActualizarMascota(mascota);
+
+            txtId.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtIdCliente.Text = string.Empty;
+            txtIdRaza.Text = string.Empty;
+        }
+
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
 
@@ -102,10 +144,10 @@ namespace WebMascotas
         
         protected void btnConsultar_Click(object sender, EventArgs e)
         {
-            string nMascota = "all";
+            string nMascota = "";
             if (txtNombre.Text.Length != 0)
             {
-                nMascota = txtNombre.Text; //suponemos que el id siempre es numerico y parseamos ese campo a entero
+                nMascota = txtNombre.Text;
             }
 
             ConsultarMascota1(nMascota);
@@ -121,7 +163,6 @@ namespace WebMascotas
             gvMascotas.DataSource = lstResultado;
             gvMascotas.DataBind();
         } */
-
 
         private void ConsultarMascota1(string nombreMascota)
         {

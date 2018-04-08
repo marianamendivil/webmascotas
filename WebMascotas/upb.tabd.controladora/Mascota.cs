@@ -28,7 +28,7 @@ namespace upb.tabd.controladora
                        join c in db.Clientes on m.IdentCliente equals c.IdentCliente
                        join r in db.Razas on m.IdRaza equals r.IdRaza
                        join e in db.Especies on r.IdEspecie equals e.IdEspecie
-                       where (m.Nombre == nombreMascota || nombreMascota == "") // si encuentra el id particular, lo trae, si no se usa '-1 ' para traer todos los valores
+                       where (m.Nombre == nombreMascota || nombreMascota == "") // si hay dos o mas mascotas con el mimso nombre, las trae todas en un listado
                        select new { m.Id, m.Nombre, c.IdentCliente, c.NombreCliente, r.IdRaza, r.Raza1, e.IdEspecie, e.Especie1 };
 
             foreach (var item in resultado)
@@ -76,6 +76,26 @@ namespace upb.tabd.controladora
             return resultado;
 
         }*/
+
+        public bool ActualizarMascota(EN.Mascota objMascota)
+        {
+            bool resultado = false;
+            try
+            {
+                BR.Mascota brMascota = db.Mascotas.Where(x => x.Id == objMascota.Id).FirstOrDefault();
+                brMascota.Nombre = objMascota.NombreMascota;
+                brMascota.IdentCliente = objMascota.Cliente.IdentCliente;
+                brMascota.IdRaza = objMascota.Raza.IdRaza;
+                db.SaveChanges();
+
+                resultado = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return resultado;
+        }
         
         
         /// <summary>
