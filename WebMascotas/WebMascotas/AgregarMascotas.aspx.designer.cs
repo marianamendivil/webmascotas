@@ -40,6 +40,15 @@ namespace WebMascotas {
         protected global::System.Web.UI.WebControls.TextBox txtId;
         
         /// <summary>
+        /// Control idmascota.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator idmascota;
+        
+        /// <summary>
         /// Control lblNombre.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace WebMascotas {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        
+        /// <summary>
+        /// Control nombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nombre;
         
         /// <summary>
         /// Control lblIdCliente.
@@ -76,6 +94,15 @@ namespace WebMascotas {
         protected global::System.Web.UI.WebControls.TextBox txtIdCliente;
         
         /// <summary>
+        /// Control cliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator cliente;
+        
+        /// <summary>
         /// Control lblIdRaza.
         /// </summary>
         /// <remarks>
@@ -92,6 +119,15 @@ namespace WebMascotas {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtIdRaza;
+        
+        /// <summary>
+        /// Control raza.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator raza;
         
         /// <summary>
         /// Control btnConsultar.
